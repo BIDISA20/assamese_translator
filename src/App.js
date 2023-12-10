@@ -1,4 +1,3 @@
-// App.js
 import React, { useState } from 'react';
 import {
     Container,
@@ -13,7 +12,6 @@ import {
 } from '@mui/material';
 import ImageUpload from './components/ImageUpload';
 import ConvertedText from './components/ConvertedText';
-import ClearIcon from '@mui/icons-material/Clear';
 import MenuIcon from '@mui/icons-material/Menu';
 
 const App = () => {
@@ -25,17 +23,11 @@ const App = () => {
         setUploadedImage(image);
         setConvertedText('');
 
-        // Simulate image conversion with a delay
         setIsLoading(true);
         setTimeout(() => {
             setIsLoading(false);
             setConvertedText('This is a placeholder text. Replace it with the actual converted text.');
         }, 2000);
-    };
-
-    const handleRemoveImage = () => {
-        setUploadedImage(null);
-        setConvertedText('');
     };
 
     return (

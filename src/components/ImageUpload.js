@@ -22,7 +22,7 @@ const ImageUpload = ({ onImageUpload, isLoading }) => {
   };
 
   const handleUploadIconClick = (e) => {
-    e.preventDefault(); // Prevents the default behavior (opening the file dialog)
+    e.preventDefault();
     fileInputRef.current.click();
   };
 
